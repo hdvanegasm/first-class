@@ -1,0 +1,12 @@
+{{#each model.people as |person|}}
+  <p class="salutate">
+    Hello
+    {{#if person.isFemale}}
+      <strong>Miss. </strong>
+    {{else}}
+      <small> Mr. </small>
+    {{/if}}
+    {{person.name}}
+  </p>
+{{/each}}
+{{outlet}}

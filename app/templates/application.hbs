@@ -1,5 +1,11 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<header class="header">
+  <h1>My First Ember.js App</h1>
+</header>
+
+{{#link-to 'about'}}
+  About us
+{{/link-to}}
 
 {{outlet}}
+
+<footer class="footer">This is my footer</footer>
