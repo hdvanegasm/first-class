@@ -11,3 +11,18 @@ body {
   padding: 0.5em;
   border-radius: 1em;
 }
+
+.person {
+  padding: 0.5em;
+  border-radius: 1em;
+  margin: 0.5em;
+  padding: 0.5em; 
+}
+
+.salutate {
+  display: inline-block;
+  background-color: rgba(214, 213, 213, 0.767);
+  border-radius: 1em;
+  margin: 0.5em;
+  padding: 0.5em;
+}

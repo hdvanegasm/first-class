@@ -1,10 +1,20 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-  didInsertElement() {
+  didUpdate() {
     this._super(...arguments);
     const person = this.get('person');
-    this.$('.person-detail')
+    this.$('.person')
+      .css(
+        'background-color',
+        this.getColorByGender(person.gender)
+      );
+  },
+
+  didRender() {
+    this._super(...arguments);
+    const person = this.get('person');
+    this.$('.person')
       .css(
         'background-color',
         this.getColorByGender(person.gender)
@@ -17,5 +27,5 @@ export default Component.extend({
     } else {
       return 'rgba(255, 0, 0, 0.3)';
     }
-  }
+  },
 });

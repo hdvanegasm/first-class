@@ -7,11 +7,7 @@ export default Route.extend({
     if (!person) {
       this.transitionTo('people');
     } else {
-      return {
-        name: person.name,
-        title: person.isFemale ? 'Miss.': 'Mr.',
-        salary: person.salary
-      };
+      return person;
     }
   }
 });
