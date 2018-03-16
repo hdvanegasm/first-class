@@ -9,7 +9,8 @@ export default Route.extend({
     } else {
       return {
         name: person.name,
-        title: person.isFemale ? 'Miss.': 'Mr.' 
+        title: person.isFemale ? 'Miss.': 'Mr.',
+        salary: person.salary
       };
     }
   }

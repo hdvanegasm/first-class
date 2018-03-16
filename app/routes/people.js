@@ -7,17 +7,20 @@ export default Route.extend({
         {
           id: 'cristian',
           name: 'Cristian',
-          isFemale: false,
+          gender: 'M',
+          salary: 100000
         },
         {
           id: 'melissa',
           name: 'Melissa',
-          isFemale: true,
+          gender: 'F',
+          salary: 30000
         },
         {
           id: 'juan',
           name: 'Juan',
-          isFemale: false,
+          gender: 'M',
+          salary: 120000
         }
       ]
     };
